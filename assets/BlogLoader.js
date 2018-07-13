@@ -48,7 +48,7 @@ function handleData(data) {
         let postContent = document.createElement('div');
         postContent.setAttribute('class', "blog__post--content");
         
-        postImg.setAttribute('src', 'https://victorjperez.github.io/assets/img' + thumbnailUrl);
+        postImg.setAttribute('src', 'https://victorjperez.github.io/Personal-Blog/assets/img' + thumbnailUrl);
         postLink.setAttribute('href', blogUrl);
         postLink.innerText = postdata.firstChild.textContent;
         postSummary.innerText = summaryText;
