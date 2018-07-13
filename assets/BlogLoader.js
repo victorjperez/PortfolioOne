@@ -36,7 +36,7 @@ function handleData(data) {
         let thumbnailUrl = (postdata.getElementsByTagName('media:thumbnail'))[0].getAttribute('url');
         let summaryText = postdata.getElementsByTagName('summary')[0].textContent;
         
-        thumbnailUrl = thumbnailUrl.substring(30, thumbnailUrl.length);
+        thumbnailUrl = thumbnailUrl.substring(45, thumbnailUrl.length);
         summaryText = summaryText.substring(0, 150);
         summaryText = summaryText.substring(0, summaryText.lastIndexOf('.')+1);
 
@@ -48,12 +48,12 @@ function handleData(data) {
         let postContent = document.createElement('div');
         postContent.setAttribute('class', "blog__post--content");
         
-        postImg.setAttribute('src', 'https://victorjperez.github.io/Personal-Blog/assets/img' + thumbnailUrl);
+        postImg.setAttribute('src', 'https://victorjperez.github.io/Personal-Blog/assets/img/' + thumbnailUrl);
         postLink.setAttribute('href', blogUrl);
         postLink.innerText = postdata.firstChild.textContent;
         postSummary.innerText = summaryText;
         postTitle.appendChild(postLink);
-        
+
         let postTidbit = document.createElement('div');
         postTidbit.setAttribute('class', "blog__post");
         postTidbit.appendChild(postImg)
