@@ -64,14 +64,15 @@ div {
   font-family: "Galada", cursive;
   color: whitesmoke;
   background: linear-gradient(45deg, #947CB0, #663399);
-  height: 75px;
+  height: 100px;
   z-index: 1;
   margin: 0;
+  padding: 0;
 }
 
 .sidebar h1 {
-  margin-top: -10px;
-  font-size: 70px;
+  margin-top: 15px;
+  font-size: 3em;
 }
 
 .bio {
@@ -212,7 +213,7 @@ div {
 }
 
 .contact a {
-  font-size: 40px;
+  font-size: 2.5em;
 }
 
 .blog .blog__post {
@@ -233,7 +234,7 @@ div {
           flex-direction: row;
   -webkit-transition: all .1s ease-out;
   transition: all .1s ease-out;
-  font-size: 32px;
+  font-size: 2em;
 }
 
 .blog .blog__post img {
@@ -286,7 +287,7 @@ span {
   display: none !important;
 }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
   body {
     display: -ms-grid;
     display: grid;
