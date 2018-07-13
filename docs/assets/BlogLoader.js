@@ -8,7 +8,7 @@ function getRSSFeed() {
         return false;
     }
     feedRequest.onreadystatechange = loadData;
-    feedRequest.open('GET', 'https://victorjperez.github.io/feed', true);
+    feedRequest.open('GET', 'https://victorjperez.github.io/Personal-Blog/feed', true);
     feedRequest.send();
 
     function loadData() {
